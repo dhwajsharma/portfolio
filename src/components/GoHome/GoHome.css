@@ -1,0 +1,27 @@
+.goHome__btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+}
+
+.goHome__btn:hover {
+  cursor: pointer;
+  box-shadow: 1px 10px 32px rgba(0, 0, 0, 0.45);
+  transition: all 0.3 ease-in-out;
+}
+
+.goHome__whiteBkg {
+  background: #fff;
+}
+
+.goHome__DarkBkg {
+  background-color: #080910;
+}
+
+.goHome__homeIcon {
+  width: 40px;
+}
