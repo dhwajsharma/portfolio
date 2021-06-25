@@ -1,23 +1,32 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import "./NavBar.css";
 
 const NavBar = () => {
+  let location = useLocation();
+
+  const homeClass = location.pathname === "/" ? "active-item" : "";
+  const aboutClass = location.pathname === "/about" ? "active-item" : "";
+  const projectsClass = location.pathname === "/projects" ? "active-item" : "";
+  const skillsClass = location.pathname === "/skills" ? "active-item" : "";
+  const contactClass = location.pathname === "/contact" ? "active-item" : "";
+
   return (
     <Menu>
-      <Link to="/" className="navbar__menuItem">
+      <Link to="/" className={`menu-item ${homeClass}`}>
         Home
       </Link>
-      <Link to="/about" className="navbar__menuItem">
+      <Link to="/about" className={`menu-item ${aboutClass}`}>
         About
       </Link>
-      <Link to="/projects" className="navbar__menuItem">
+      <Link to="/projects" className={`menu-item ${projectsClass}`}>
         Projects
       </Link>
-      <Link to="/skills" className="navbar__menuItem">
+      <Link to="/skills" className={`menu-item ${skillsClass}`}>
         Skills
       </Link>
-      <Link to="/contact" className="navbar__menuItem">
+      <Link to="/contact" className={`menu-item ${contactClass}`}>
         Contact
       </Link>
     </Menu>
