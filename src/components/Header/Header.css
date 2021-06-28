@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  align-self: center;
+}
+
+.header > h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.9em;
+  line-height: 57px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #fff;
+  margin: 000;
+}
+
+.header > p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  text-align: center;
+  color: #fff;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 640px) {
+  .header {
+    width: 80%;
+  }
+  .header > p {
+    font-size: 1.2em;
+    line-height: 1.2em;
+  }
+}
